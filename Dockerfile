@@ -1,4 +1,4 @@
-FROM docker.i.stormpath.com/debian:wheezy
+FROM debian:wheezy
 
 RUN apt-get update && apt-get install -y git wget python python-pip
 RUN pip install stormpath-cli
