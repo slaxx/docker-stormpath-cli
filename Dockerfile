@@ -7,7 +7,7 @@ RUN pip install stormpath-cli
 RUN useradd -ms /bin/bash stormpath
 
 RUN mkdir /home/stormpath/.stormpath
-ADD files/apiKey.properties /home/stormpath/.stormpath/
+ADD ./apiKey.properties /home/stormpath/.stormpath/
 RUN chmod go-rwx /home/stormpath/.stormpath/apiKey.properties
 RUN chown -R stormpath:stormpath /home/stormpath/
 
